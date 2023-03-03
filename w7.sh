@@ -6,7 +6,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/nu
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Ctrl + V Authtoken: " CRP 
 ./ngrok authtoken $CRP 
-nohup ./ngrok tcp --region sa 3388 &>/dev/null &
+nohup ./ngrok tcp 3389 --region=sa &>/dev/null &
 echo Downloading File From akuh.net
 apt-get install qemu-system-x86 -y
 echo "Wait"
